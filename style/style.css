@@ -3,26 +3,45 @@
 }
 
 .head {
-  background-color: orange;
+  background-color: #ffe194;
   display: flex;
-
   justify-content: center;
   align-items: center;
-  height: 100px;
+  padding: 30px;
+  font-size: 2em;
+  font-weight: bold;
 }
 
 .search {
-  height: 70px;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 20px;
+  border-bottom: solid black;
 }
 
 .card-item {
-  background-color: rgb(222, 200, 160);
+  background-color: bisque;
   margin: 20px;
   padding: 20px;
   width: 300px;
   border-radius: 10px;
   cursor: pointer;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 3px 6px rgba(0, 0, 0, 0.24);
+}
+
+.search-label {
+  font-size: 25px;
+}
+
+.search-input {
+  margin-left: 20px;
+  min-width: 200px;
+  padding: 5px 10px;
+}
+
+.search-button {
+  margin-left: 10px;
+  padding: 5px;
 }

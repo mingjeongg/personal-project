@@ -60,11 +60,33 @@ fetch(
     console.log(topMovies);
   });
 
-card????????????????????????????????????????????????????????
-  .forEach(function (x) {
-    if (x.movieName.includes(searchKeyword)) {
-      card.style.display;
+// card????????????????????????????????????????????????????????
+//   .forEach(function (x) {
+//     if (x.movieName.includes(searchKeyword)) {
+//       card.style.display;
+//     }
+//   })
+
+const movieCards = document.querySelectorAll(".movie-list");
+movieCards
+  .forEach(function (card) {
+    const title = card.querySelector(",movieName").textContent.toLowerCase;
+    if (title.includes(searchKeyword)) {
+      card.style.display = "block";
+    } else {
+      card.style.display = "none";
     }
   })
+
+  // string.toLowerCase() - string을 소문자로 해서 반환
+
+  //array.includes(특정값) - 배열의 항목에 특정 값이 포함되어 있는지를 판단하여 true 또는 flase 반환
+
+  //display: none: 요소를 숨김처리, visibility: hidden과 달리 공간을 차지 하지 않고 숨김처리
+  //display-inline: 새 라인에서 시작하지 않고, 내용만큼 너비를 차지
+  //display: block: 새 라인에서 시작, 사용가능한 전체 너비(상위요소의 전체 너비) 차지
+  //display: inline-block: 새 라인에서 시작하지 않고 내용만큼 너비 차지, 근데 높이와 너비 설정 가능
+
+  //visible:  볼 수 있음 - 보일지 말지 결정
 
   .catch((err) => console.error(err));
