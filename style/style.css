@@ -1,0 +1,28 @@
+:root {
+  background-color: rgb(217, 246, 236);
+}
+
+.head {
+  background-color: orange;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.search {
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-item {
+  background-color: rgb(222, 200, 160);
+  margin: 20px;
+  padding: 20px;
+  width: 300px;
+  border-radius: 10px;
+  cursor: pointer;
+}
